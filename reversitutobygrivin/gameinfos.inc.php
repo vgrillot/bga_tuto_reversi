@@ -2,18 +2,19 @@
 
 $gameinfos = array( 
 
+'game_name' => 'Reversi',
 
 // Game designer (or game designers, separated by commas)
-'designer' => '',       
+'designer' => 'John W. Mollett, Lewis Waterman',
 
 // Game artist (or game artists, separated by commas)
-'artist' => '',         
+'artist' => 'John Adams, Kinetic, Walter Pepperle, Néstor Romeral Andrés',
 
 // Year of FIRST publication of this game. Can be negative.
 'year' => 1880,                 
 
 // Game publisher
-'publisher' => '',                     
+'publisher' => 'Public Domain',
 
 // Url of game publisher website
 'publisher_website' => '',   
