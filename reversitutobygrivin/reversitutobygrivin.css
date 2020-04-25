@@ -1,7 +1,7 @@
 /**
  *------
  * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
- * ReversiTutoByGrivin implementation : © <Your name here> <Your email address here>
+ * Reversi implementation : © Gregory Isabelli <gisabelli@boardgamearena.com>
  *
  * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
  * See http://en.boardgamearena.com/#!doc/Studio for more information.
@@ -46,27 +46,32 @@
 /* Note: you must not use any @import directive */
 
 
-/********* You can start writing your CSS below this line: **********/
+#board {
+    width: 536px;
+    height: 528px;
+    background-image: url('img/board.jpg');
+    position: relative;
+    margin: auto;
+}
 
+.square {
+    width: 62px;
+    height: 62px;
+    position: absolute;
+}
 
-/*
-    Example of CSS sprites (a black token and a white token, 20x20px each, embedded in the same "tokens.png" 40x20px image):
+.disc {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    background-image: url('img/tokens.png');
+}
+.disccolor_ffffff { background-position: 0px 0px;   }
+.disccolor_000000 { background-position: -56px 0px;   }
 
-    .white_token {
-        background-image: url('img/tokens.png');
-        background-position: 0px 0px;
-    }
-    .black_token {
-        background-image: url('img/tokens.png');
-        background-position: -20px 0px;
-    }
-    .token {
-        width: 20px;
-        height: 20px;
-        background-repeat: none;
-    }
-*/
-
-
-
-
+.possibleMove {
+    background-color: white;
+    opacity: 0.2;
+    filter:alpha(opacity=20); /* For IE8 and earlier */
+    cursor: pointer;
+}
