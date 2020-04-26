@@ -62,7 +62,8 @@ class ReversiTutoByGrivin extends Table
         // The number of colors defined here must correspond to the maximum number of players allowed for the gams
 /*        $gameinfos = self::getGameinfos();
         $default_colors = $gameinfos['player_colors'];*/
-        $default_color = array( "000000", "ffffff" );
+
+        $default_colors = array( "000000", "ffffff" );
 
  
         // Create players
