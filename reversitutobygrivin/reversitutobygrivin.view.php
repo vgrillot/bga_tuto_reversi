@@ -76,7 +76,7 @@
         
         */
 
-        $this->page->begin_block( "reversi_reversi", "square" );
+        $this->page->begin_block( "reversitutobygrivin_reversitutobygrivin", "square" );
 
         $hor_scale = 64.8;
         $ver_scale = 64.4;
