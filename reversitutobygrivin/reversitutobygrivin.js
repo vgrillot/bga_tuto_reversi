@@ -160,6 +160,7 @@ function (dojo, declare) {
 
         addDiscOnBoard: function( x, y, player )
         {
+            console.debug('addDiscOnBoard('+x+','+y+','+player+')');
             var color = this.gamedatas.players[ player ].color;
 
             dojo.place( this.format_block( 'jstpl_disc', {
@@ -320,6 +321,7 @@ function (dojo, declare) {
         notif_playDisc: function( notif )
         {
             // Remove current possible moves (makes the board more clear)
+            console.debug('notif_playDisc');
             dojo.query( '.possibleMove' ).removeClass( 'possibleMove' );
 
             this.addDiscOnBoard( notif.args.x, notif.args.y, notif.args.player_id );
@@ -327,6 +329,7 @@ function (dojo, declare) {
 
         notif_turnOverDiscs: function( notif )
         {
+            console.debug('notif_turnOverDiscs');
             // Get the color of the player who is returning the discs
             var targetColor = this.gamedatas.players[ notif.args.player_id ].color;
 
