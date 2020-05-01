@@ -246,7 +246,7 @@ define([
 
                 if (this.checkAction('playDisc'))    // Check that this action is possible at this moment
                 {
-                    this.ajaxcall("/reversi/reversi/playDisc.html", {
+                    this.ajaxcall("/reversitutobygrivin/reversitutobygrivin/playDisc.html", {
                         x: x,
                         y: y
                     }, this, function (result) {
