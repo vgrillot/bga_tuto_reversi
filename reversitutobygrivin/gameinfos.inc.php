@@ -2,7 +2,7 @@
 
 $gameinfos = array( 
 
-'game_name' => 'Reversi',
+'game_name' => 'reversitutobygrivin',
 
 // Game designer (or game designers, separated by commas)
 'designer' => 'John W. Mollett, Lewis Waterman',
